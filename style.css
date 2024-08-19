@@ -70,4 +70,51 @@ nav{
     font-weight: 600;
 }
 
+/* 3 - MAIN */
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-background{
+    background-color: var(--cor-marrom2);
+}
+
+.hero {
+    background-color: var(--cor-marrom2);
+
+    max-width: 1120px;
+    height: 60vh;
+
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 6rem;
+
+    padding: 0px 2rem;
+    margin: auto;
+    overflow: hidden;
+}
+
+.hero-conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.hero-imagens-container{
+    max-width: 45%;
+    column-count: 4;
+    column-gap: 1rem;
+    margin: -1rem;
+
+}
+
+.hero-imagens-container > figure > img{
+    width: 100%;
+    border-radius: 8px;
+
+}
+
 
