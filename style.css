@@ -26,7 +26,6 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body{
@@ -216,6 +215,7 @@ button {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 2rem;
 }
 
@@ -226,7 +226,7 @@ button {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    flex-basis: 29rem;
+    flex-basis: 30rem;
     margin-top:2rem ;
 }
 
