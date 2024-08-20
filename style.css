@@ -8,14 +8,18 @@
 :root{
     --cor-marrom1:#1F1517;
     --cor-marrom2:#181012;
+    --cor-marrom3:#241A1C;
+    --cor-marrom4:#23181A;
     --cor-branco:#FFFFFF;
     --cor-marrom-cl:#A45A49 ;
     --cor-cinza: #C7BAB3;
+    --cor-cinza2:#756A67;
+    --cor-amarelo: #E7A80E;
 
-    --fonte-logo:'Teko', 'sans-serif';
-    --fonte-principal: 'Inter', 'sans-serif';
-    --fonte-h1:'Montserrat', 'sans-serif';
-    --fonte-destaque: 'Epilogue', 'sans-serif';
+    --teko:'Teko', 'sans-serif';
+    --inter: 'Inter', 'sans-serif';
+    --montserrat:'Montserrat', 'sans-serif';
+    --epilogue: 'Epilogue', 'sans-serif';
 }
 
 /* 1 - GERAL */
@@ -31,7 +35,7 @@ body{
 }
 
 html{
-    font-family: var(--fonte-principal);
+    font-family: var(--inter);
     font-weight: 500;
 }
 
@@ -46,7 +50,7 @@ ul{
 
 /* 2 - HEADER */
 .logo{
-    font-family: var(--fonte-logo);
+    font-family: var(--teko);
     font-size: 2rem;
     text-transform: uppercase;
     font-weight: 600;
@@ -110,21 +114,25 @@ main{
     max-width: 480px;
 }
 
-.hero-destaque{
+.destaque{
     
     text-transform:uppercase ;
     font-size: 1rem;
     font-weight: 500;
-    font-family: var(--fonte-destaque);
+    font-family: var(--epilogue);
 }
 
 .marrom{
     color: var(--cor-marrom-cl);
 }
 
+.amarelo{
+    color:var(--cor-amarelo) ;
+}
+
 .hero-titulo-principal{
     font-size: 3.5rem;
-    font-family: var(--fonte-h1);
+    font-family: var(--montserrat);
     font-weight: 800;
 }
 
@@ -135,9 +143,9 @@ main{
 }
 
 .hero-subtitulo{
-    font-size: 1.5rempx;
+    font-size: 1.5rem;
     color: var(--cor-cinza);
-    font-family: var(--fonte-principal);
+    font-family: var(--inter);
     font-weight: 400;
 }
 
@@ -170,3 +178,118 @@ button {
     background-color: var(--cor-marrom-cl);
 
 }
+
+.receitas{
+    display: flex;
+    flex-direction: column;
+    max-width: 1120px;
+    padding: 3rem 2rem;
+    margin: auto;
+}
+
+.receitas-head{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 1120px;
+}
+
+.receitas-titulo{
+    font-family: var(--montserrat);
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--cor-branco);
+}
+
+.receitas-subtitulo{
+    font-size: 1rem;
+    color: var(--cor-cinza);
+    font-family: var(--inter);
+    font-weight: 400;
+}
+
+
+.receitas-card-container{
+    margin: auto;
+    max-width: 1120px;
+    padding: 0rem ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.receitas-card{
+    background-color:var(--cor-marrom3);
+    padding: 2rem;
+    border-radius: 0.5rem; 
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex-basis: 29rem;
+    margin-top:2rem ;
+}
+
+
+.receitas-card-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.receitas-card-header-detalhe{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.receita-titulo{
+    font-family: var(--montserrat);
+    color: var(--cor-branco);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.receita-avaliacao{
+    color: var(--cor-cinza2);
+    font-family: var(--inter);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.receita-descricao{
+    font-family: var(--inter);
+    font-size: 1rem;
+    color: var(--cor-cinza);
+    font-weight: 400;
+}
+
+.receita-autor{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.autor-img{
+    border-radius:20rem;
+    width: 1.8rem;
+}
+
+.nome-autor{
+    font-family: var(--inter);
+    font-size: 1rem;
+    color: var(--cor-cinza);
+    font-weight: 600;
+}
+
+footer{
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--cor-marrom4);
+}
+
